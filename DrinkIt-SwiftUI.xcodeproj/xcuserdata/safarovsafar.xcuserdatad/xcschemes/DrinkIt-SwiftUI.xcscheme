@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F6FDBA8525547B3F0020AE08"
+               BuildableName = "DrinkIt-SwiftUI.app"
+               BlueprintName = "DrinkIt-SwiftUI"
+               ReferencedContainer = "container:DrinkIt-SwiftUI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F6FDBA8525547B3F0020AE08"
+            BuildableName = "DrinkIt-SwiftUI.app"
+            BlueprintName = "DrinkIt-SwiftUI"
+            ReferencedContainer = "container:DrinkIt-SwiftUI.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
