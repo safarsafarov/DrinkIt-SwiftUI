@@ -28,5 +28,6 @@ struct TabBarView: View {
                     Image(systemName: "person")
                 }
         }
+        .accentColor(.black)
     }
 }
