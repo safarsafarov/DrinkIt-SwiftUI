@@ -32,7 +32,7 @@ struct CardView: View {
                 }
                 .padding()
             }
-            .padding(.leading, 10)
+            
             
             Spacer(minLength: 0)
             
@@ -40,7 +40,6 @@ struct CardView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: UIScreen.main.bounds.height / 3)
-                
         }
         .padding()
         .background(Color(item.image))

@@ -53,6 +53,8 @@ struct Home: View {
                     ForEach(items){item in
                         // Card View...
                         CardView(item: item)
+                            .padding(.trailing, 20)
+                            .padding(.leading, 20)
                     }
                 }
             }
