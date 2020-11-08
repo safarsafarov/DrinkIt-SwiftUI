@@ -15,6 +15,8 @@ struct Home: View {
         Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1")
         
     ]
+    
+    
 
     
     var body: some View {
