@@ -20,8 +20,8 @@ struct Home: View {
 
     
     var body: some View {
-        ZStack{
-            VStack {
+        VStack{
+            ZStack {
                 HStack {
                     Button(action: {}) {
                         Image(systemName: "line.horizontal.3.decrease")
@@ -30,13 +30,7 @@ struct Home: View {
                             .foregroundColor(.primary)
                     }
                     
-                    ScrollView(.vertical, showsIndicators: false) {
-                        VStack(spacing: 20){
-                            ForEach(items){item in
-                                // Card View...
-                            }
-                        }
-                    }
+                    Spacer()
                     
                     Button(action: {}) {
                         Image(systemName: "bag")
@@ -44,12 +38,25 @@ struct Home: View {
                                             .heavy))
                             .foregroundColor(.primary)
                     }
+                    
+                }
+                
+                Text("DrinkIt")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.primary)
+            }
+            .padding()
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 20) {
+                    ForEach(items){item in
+                        // Card View...
+                        CardView(item: item)
+                    }
                 }
             }
-            Text("Besom")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(.primary)
+            
         }
     }
 }

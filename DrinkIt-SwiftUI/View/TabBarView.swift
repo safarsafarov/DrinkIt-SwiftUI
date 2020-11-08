@@ -12,7 +12,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView {
-            Text("Home")
+            Home()
                 .tabItem{
                     Image(systemName: "house")
                 }

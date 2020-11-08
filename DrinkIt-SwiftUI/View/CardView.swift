@@ -11,7 +11,7 @@ struct CardView: View {
     var item: Item
     var body: some View {
         HStack {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 15) {
                 Text(item.title)
                     .font(.title)
                     .fontWeight(.heavy)
@@ -40,6 +40,7 @@ struct CardView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: UIScreen.main.bounds.height / 3)
+                
         }
         .padding()
         .background(Color(item.image))
