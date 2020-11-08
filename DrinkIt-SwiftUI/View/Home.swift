@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct Home: View {
+    
+   @State var items = [
+    Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1"),
+        Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1"),
+        Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1")
+        
+    ]
+
+    
     var body: some View {
         ZStack{
             VStack {
@@ -19,7 +28,13 @@ struct Home: View {
                             .foregroundColor(.primary)
                     }
                     
-                    Spacer()
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(spacing: 20){
+                            ForEach(items){item in
+                                // Card View...
+                            }
+                        }
+                    }
                     
                     Button(action: {}) {
                         Image(systemName: "bag")
@@ -36,4 +51,6 @@ struct Home: View {
         }
     }
 }
+
+// Model and Model data
 
