@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     var item: Item
+    @ObservedObject var tabData : TabViewModel
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 15) {
@@ -21,7 +22,13 @@ struct CardView: View {
                     .fontWeight(.heavy)
                     .foregroundColor(.white)
                 
-                Button(action: {}) {
+                Button(action: {
+                    
+                    withAnimation(.spring()){
+                        tabData.selectedItem = item
+                        tabData.isDetail.toggle()
+                    }
+                }) {
                     Text("Buy Now")
                         .fontWeight(.heavy)
                         .foregroundColor(Color(item.image))
@@ -32,6 +39,8 @@ struct CardView: View {
                 }
                 .padding()
             }
+            .padding(.leading, 10)
+            .offset(y: 27)
             
             
             Spacer(minLength: 0)
@@ -42,7 +51,9 @@ struct CardView: View {
                 .frame(height: UIScreen.main.bounds.height / 3)
         }
         .padding()
-        .background(Color(item.image))
-        .cornerRadius(25)
+        .background(Color(item.image)
+                        .cornerRadius(25)
+                        .padding(.top, 55)
+        )
     }
 }

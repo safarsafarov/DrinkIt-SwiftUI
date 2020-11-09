@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61A7E6E2556B2F7007225EC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A7E6D2556B2F7007225EC /* TabBarView.swift */; };
+		F61A7E762556B663007225EC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A7E752556B663007225EC /* Home.swift */; };
+		F67B3D562557F3820027892C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B3D552557F3820027892C /* Item.swift */; };
+		F67B3D5B2557F4A10027892C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B3D5A2557F4A10027892C /* CardView.swift */; };
+		F67B3D60255876210027892C /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B3D5F255876210027892C /* Detail.swift */; };
 		F6FDBA8A25547B3F0020AE08 /* DrinkIt_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FDBA8925547B3F0020AE08 /* DrinkIt_SwiftUIApp.swift */; };
 		F6FDBA8C25547B3F0020AE08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FDBA8B25547B3F0020AE08 /* ContentView.swift */; };
 		F6FDBA8E25547B400020AE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FDBA8D25547B400020AE08 /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F61A7E6D2556B2F7007225EC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F61A7E752556B663007225EC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F67B3D552557F3820027892C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F67B3D5A2557F4A10027892C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F67B3D5F255876210027892C /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		F6FDBA8625547B3F0020AE08 /* DrinkIt-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DrinkIt-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FDBA8925547B3F0020AE08 /* DrinkIt_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkIt_SwiftUIApp.swift; sourceTree = "<group>"; };
 		F6FDBA8B25547B3F0020AE08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61A7E6A2556B2D1007225EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F61A7E6D2556B2F7007225EC /* TabBarView.swift */,
+				F61A7E752556B663007225EC /* Home.swift */,
+				F67B3D5A2557F4A10027892C /* CardView.swift */,
+				F67B3D5F255876210027892C /* Detail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F61A7E6B2556B2D6007225EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F67B3D552557F3820027892C /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F61A7E6C2556B2DB007225EC /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
 		F6FDBA7D25547B3F0020AE08 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +131,9 @@
 		F6FDBA8825547B3F0020AE08 /* DrinkIt-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F61A7E6C2556B2DB007225EC /* ModelView */,
+				F61A7E6B2556B2D6007225EC /* Model */,
+				F61A7E6A2556B2D1007225EC /* View */,
 				F6FDBA8925547B3F0020AE08 /* DrinkIt_SwiftUIApp.swift */,
 				F6FDBA8B25547B3F0020AE08 /* ContentView.swift */,
 				F6FDBA8D25547B400020AE08 /* Assets.xcassets */,
@@ -259,7 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67B3D562557F3820027892C /* Item.swift in Sources */,
+				F67B3D60255876210027892C /* Detail.swift in Sources */,
 				F6FDBA8C25547B3F0020AE08 /* ContentView.swift in Sources */,
+				F61A7E6E2556B2F7007225EC /* TabBarView.swift in Sources */,
+				F61A7E762556B663007225EC /* Home.swift in Sources */,
+				F67B3D5B2557F4A10027892C /* CardView.swift in Sources */,
 				F6FDBA8A25547B3F0020AE08 /* DrinkIt_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,12 +11,12 @@ struct Home: View {
     
    @State var items = [
     Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1"),
-        Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1"),
-        Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p1")
+        Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p2"),
+        Item(title: "Besom Lemon Joice", price: "$25.99", discount: "7$", image: "p3")
         
     ]
     
-    
+    @ObservedObject var tabData : TabViewModel
 
     
     var body: some View {
@@ -52,9 +52,9 @@ struct Home: View {
                 VStack(spacing: 20) {
                     ForEach(items){item in
                         // Card View...
-                        CardView(item: item)
-                            .padding(.trailing, 20)
-                            .padding(.leading, 20)
+                        CardView(item: item, tabData: tabData)
+                            .padding(.trailing, 15)
+                            .padding(.leading, 15)
                     }
                 }
             }

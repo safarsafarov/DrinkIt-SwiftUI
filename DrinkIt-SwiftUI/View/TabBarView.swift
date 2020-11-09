@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct TabBarView: View {
-    
-    
+    @StateObject var tabData = TabViewModel()
     var body: some View {
         TabView {
-            Home()
+            Home(tabData: tabData)
                 .tabItem{
                     Image(systemName: "house")
                 }
