@@ -9,25 +9,32 @@ import SwiftUI
 
 struct TabBarView: View {
     @StateObject var tabData = TabViewModel()
+    @Namespace var animation
     var body: some View {
-        TabView {
-            Home(tabData: tabData)
-                .tabItem{
-                    Image(systemName: "house")
-                }
-            Text("Search")
-                .tabItem{
-                    Image(systemName: "magnifyingglass")
-                }
-            Text("Linked")
-                .tabItem{
-                    Image(systemName: "suit.heart")
-                }
-            Text("Settings")
-                .tabItem{
-                    Image(systemName: "person")
-                }
+        ZStack{
+            TabView {
+                Home(tabData: tabData, animation: animation)
+                    .tabItem{
+                        Image(systemName: "house")
+                    }
+                Text("Search")
+                    .tabItem{
+                        Image(systemName: "magnifyingglass")
+                    }
+                Text("Linked")
+                    .tabItem{
+                        Image(systemName: "suit.heart")
+                    }
+                Text("Settings")
+                    .tabItem{
+                        Image(systemName: "person")
+                    }
+            }
+            .accentColor(.black)
+            
+            if tabData.isDetail {
+                Detail(tabData: tabData, animation: animation)
+            }
         }
-        .accentColor(.black)
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct CardView: View {
     var item: Item
     @ObservedObject var tabData : TabViewModel
+    var animation: Namespace.ID
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 15) {
@@ -48,7 +49,9 @@ struct CardView: View {
             Image(item.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .matchedGeometryEffect(id: item.image, in: animation)
                 .frame(height: UIScreen.main.bounds.height / 3)
+                
         }
         .padding()
         .background(Color(item.image)

@@ -17,7 +17,7 @@ struct Home: View {
     ]
     
     @ObservedObject var tabData : TabViewModel
-
+    var animation: Namespace.ID
     
     var body: some View {
         VStack{
@@ -52,7 +52,7 @@ struct Home: View {
                 VStack(spacing: 20) {
                     ForEach(items){item in
                         // Card View...
-                        CardView(item: item, tabData: tabData)
+                        CardView(item: item, tabData: tabData, animation: animation)
                             .padding(.trailing, 15)
                             .padding(.leading, 15)
                     }
