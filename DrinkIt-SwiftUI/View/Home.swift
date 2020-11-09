@@ -17,7 +17,7 @@ struct Home: View {
     ]
     
     @ObservedObject var tabData : TabViewModel
-    var animation: Namespace.ID
+    var animation:  Namespace.ID
     
     var body: some View {
         VStack{
