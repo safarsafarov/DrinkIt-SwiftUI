@@ -12,6 +12,7 @@ struct Detail: View {
     // for hero animation...
     var animation: Namespace.ID
     @State var start = false
+    @State var cart = 1
     var body: some View {
         VStack {
             
@@ -19,14 +20,14 @@ struct Detail: View {
                 ZStack {
                     HStack {
                         Button(action: {
-                            withAnimation(.spring()){
-                                tabData.isDetail.toggle()
+                            withAnimation(Animation.easeIn(duration: 0.5)){
+                                start.toggle()
                             }
                         }) {
                             Image(systemName: "arrow.left")
                                 .font(.system(size: 24, weight:
                                                 .heavy))
-                                .foregroundColor(.primary)
+                                .foregroundColor(.white)
                         }
                         
                         Spacer()
@@ -35,7 +36,7 @@ struct Detail: View {
                             Image(systemName: "bag")
                                 .font(.system(size: 24, weight:
                                                 .heavy))
-                                .foregroundColor(.primary)
+                                .foregroundColor(.white)
                         }
                         
                     }
@@ -67,7 +68,37 @@ struct Detail: View {
                 .frame(height: UIScreen.main.bounds.height / 2.8)
                 .padding(.vertical, 25)
             }
+            .background(Color(tabData.selectedItem.image).clipShape(CustomCorner()))
+            HStack(spacing: 15) {
+                Button(action: {
+                    if cart != 1{cart -= 1}
+                }) {
+                    Image(systemName: "minus")
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundColor(.white)
+                }
+                
+                Text("\(cart)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                
+                Button(action: {cart += 1}) {
+                    Image(systemName: "plus")
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundColor(.white)
+                }
+                
+            }
+            .padding(.vertical)
+            .padding(.horizontal, 25)
             .background(Color(tabData.selectedItem.image))
+            // white border
+            .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color.white,lineWidth: 1.5)
+            )
+            .cornerRadius(15)
+            .offset(y: -35)
             Spacer()
         }
         .background(

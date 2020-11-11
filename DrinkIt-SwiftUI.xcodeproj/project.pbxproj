@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F61A7E6E2556B2F7007225EC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A7E6D2556B2F7007225EC /* TabBarView.swift */; };
 		F61A7E762556B663007225EC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61A7E752556B663007225EC /* Home.swift */; };
+		F6792423255C98BB006BC600 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6792422255C98BB006BC600 /* CustomCorner.swift */; };
 		F67B3D562557F3820027892C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B3D552557F3820027892C /* Item.swift */; };
 		F67B3D5B2557F4A10027892C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B3D5A2557F4A10027892C /* CardView.swift */; };
 		F67B3D60255876210027892C /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B3D5F255876210027892C /* Detail.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		F61A7E6D2556B2F7007225EC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F61A7E752556B663007225EC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F6792422255C98BB006BC600 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		F67B3D552557F3820027892C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F67B3D5A2557F4A10027892C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F67B3D5F255876210027892C /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				F61A7E752556B663007225EC /* Home.swift */,
 				F67B3D5A2557F4A10027892C /* CardView.swift */,
 				F67B3D5F255876210027892C /* Detail.swift */,
+				F6792422255C98BB006BC600 /* CustomCorner.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				F687FCAF25594526001DAF9C /* TabViewModel.swift in Sources */,
 				F67B3D562557F3820027892C /* Item.swift in Sources */,
 				F67B3D60255876210027892C /* Detail.swift in Sources */,
+				F6792423255C98BB006BC600 /* CustomCorner.swift in Sources */,
 				F6FDBA8C25547B3F0020AE08 /* ContentView.swift in Sources */,
 				F61A7E6E2556B2F7007225EC /* TabBarView.swift in Sources */,
 				F61A7E762556B663007225EC /* Home.swift in Sources */,
