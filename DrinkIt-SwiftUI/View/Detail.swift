@@ -47,6 +47,7 @@ struct Detail: View {
                         .foregroundColor(.primary)
                 }
                 .padding()
+                
                 ZStack {
                     Image(tabData.selectedItem.image)
                         .resizable()
@@ -65,9 +66,10 @@ struct Detail: View {
                         .aspectRatio(contentMode: .fit)
                         .matchedGeometryEffect(id: tabData.selectedItem.image, in: animation)
                 }
-                .frame(height: UIScreen.main.bounds.height / 2.8)
+                .frame(height: UIScreen.main.bounds.height / 3)
                 .padding(.vertical, 25)
             }
+            .padding(.bottom)
             .background(Color(tabData.selectedItem.image).clipShape(CustomCorner()))
             HStack(spacing: 15) {
                 Button(action: {
@@ -92,13 +94,14 @@ struct Detail: View {
             .padding(.vertical)
             .padding(.horizontal, 25)
             .background(Color(tabData.selectedItem.image))
+            .cornerRadius(15)
             // white border
             .background(
                 RoundedRectangle(cornerRadius: 15)
                     .stroke(Color.white,lineWidth: 1.5)
             )
-            .cornerRadius(15)
             .offset(y: -35)
+            .padding(.bottom, -35)
             Spacer()
         }
         .background(
